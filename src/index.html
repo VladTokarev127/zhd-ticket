@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title></title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+
+<body>
+	<!-- railway__container -- Не нужно переносить, нужен для центровки, переносите просто секцию -->
+	<div class="railway__container">
+
+		<!-- start section railway -->
+		<section class="railway">
+
+			<h1 class="railway__title">ЖД вокзал Иваново</h1>
+
+			<div class="railway__info">
+
+				<div class="railway__row">
+					<div class="railway__col">
+						<div class="railway__label">Телефон:</div>
+						<div class="railway__val"><a href="tel:+78005101111">+7 (800) 510-11-11</a></div>
+					</div>
+					<div class="railway__col">
+						<div class="railway__label">Режим работы:</div>
+						<div class="railway__val">Круглосуточно</div>
+					</div>
+					<div class="railway__info-official">
+						<div class="railway__info-official-icon">
+							<svg width="24" height="25" viewBox="0 0 24 25" xmlns="http://www.w3.org/2000/svg">
+								<path d="M9 10.5L12.2581 12.9436C12.6766 13.2574 13.2662 13.1957 13.6107 12.8021L20 5.5" stroke-width="2" stroke-linecap="round"/>
+								<path d="M21 12.5C21 14.3805 20.411 16.2137 19.3156 17.7423C18.2203 19.2709 16.6736 20.4179 14.893 21.0224C13.1123 21.6268 11.187 21.6583 9.38744 21.1125C7.58792 20.5666 6.00459 19.4707 4.85982 17.9789C3.71505 16.487 3.06635 14.674 3.00482 12.7945C2.94329 10.915 3.47203 9.06344 4.51677 7.49987C5.56152 5.9363 7.06979 4.73925 8.82975 4.07685C10.5897 3.41444 12.513 3.31996 14.3294 3.80667" stroke-width="2" stroke-linecap="round"/>
+							</svg>
+						</div>
+						<div class="railway__info-official-content">
+							<div class="railway__info-title">Актуальное расписание</div>
+							<div class="railway__info-text">Официальные партнер UFS.travel</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="railway__address">
+					<div class="railway__label">Адрес:</div>
+					<div class="railway__val">Иваново, ул. Лежневская, д. 152</div>
+				</div>
+
+				<div class="railway__links">
+					<a href="#" class="railway__link">Показать на карте</a>
+					<a href="#" class="railway__link">Проложить маршрут</a>
+					<a href="#" class="railway__link">Скопировать адрес вокзала</a>
+				</div>
+
+			</div>
+
+			<div class="railway__top">
+
+				<div class="railway__sorting">
+					<button class="railway__sorting-btn is-active">Все</button>
+					<button class="railway__sorting-btn">Отправление</button>
+					<button class="railway__sorting-btn">Прибытие</button>
+				</div>
+
+				<div class="railway__search">
+					<button class="railway__search-btn">
+						<svg width="24" height="25" viewBox="0 0 24 25" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="11" cy="11.5" r="7" stroke-width="2"/>
+							<path d="M20 20.5L17 17.5" stroke-width="2" stroke-linecap="round"/>
+						</svg>
+					</button>
+					<input type="text" name="search" class="railway__search-input" placeholder="Город, станция или номер поезда" required>
+				</div>
+
+			</div>
+
+			<div class="railway__table-wrapper">
+				<h2 class="railway__table-title">Расписание поездов из Иваново и стоимость билетов</h2>
+				<div class="railway__table-info">
+					<div class="railway__table-item">
+						<div class="railway__table-item-icon">
+							<img src="img/icon-1.png" alt="">
+						</div>
+						<div class="railway__table-item-text">Отправление и прибытие по Московскому времени</div>
+					</div>
+					<div class="railway__table-item">
+						<div class="railway__table-item-icon">
+							<img src="img/icon-2.png" alt="">
+						</div>
+						<div class="railway__table-item-text">посмотреть цены у всех поездов</div>
+					</div>
+				</div>
+				<div class="railway__table">
+					<div class="railway__table-mob">Онлайн табло ЖД вокзала Иваново</div>
+					<div class="railway__table-head">
+						<div class="railway__table-train railway__table-train_head">Поезд</div>
+						<div class="railway__table-route railway__table-route_head">Маршрут</div>
+						<div class="railway__table-departure railway__table-departure_head">Отправление</div>
+						<div class="railway__table-way railway__table-way_head">В пути</div>
+						<div class="railway__table-arrival railway__table-arrival_head">Прибытие</div>
+						<div class="railway__table-price railway__table-price_head">Стоимость билетов</div>
+					</div>
+					<div class="railway__table-body">
+						<div class="railway__table-row">
+							<div class="railway__table-train"><span>Поезд</span>206А</div>
+							<div class="railway__table-route"><span>Маршрут</span>Санкт-Петербург → Иваново</div>
+							<div class="railway__table-departure"><span>Отправление</span>21:02</div>
+							<div class="railway__table-way"><span>В пути</span>20 часов <br>59 минут</div>
+							<div class="railway__table-arrival"><span>Прибытие</span>15:01</div>
+							<div class="railway__table-price">
+								<div class="railway__table-price-desc">
+									<div class="railway__table-desc-row">
+										<div class="railway__table-name">Сидячий</div>
+										<div class="railway__table-val">от 1 973 ₽</div>
+										<div class="railway__table-buy"><a href="#">Купить</a></div>
+									</div>
+									<div class="railway__table-desc-row">
+										<div class="railway__table-name">Плацкарт</div>
+										<div class="railway__table-val">от 2 973 ₽</div>
+										<div class="railway__table-buy"><a href="#">Купить</a></div>
+									</div>
+									<div class="railway__table-desc-row">
+										<div class="railway__table-name">Купе</div>
+										<div class="railway__table-val">от 22 973 ₽</div>
+										<div class="railway__table-buy"><a href="#">Купить</a></div>
+									</div>
+								</div>
+								<button class="railway__table-price-btn">
+									<div class="railway__table-price-text railway__table-price-text_show">
+										<svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+											<path d="M6 1.5L6 10.5" stroke-width="1.7" stroke-linecap="round"/>
+											<path d="M10.5 6L1.5 6" stroke-width="1.7" stroke-linecap="round"/>
+										</svg>
+										Посмотреть цены
+									</div>
+									<div class="railway__table-price-text railway__table-price-text_hide">
+										<svg width="14" height="15" viewBox="0 0 14 15" xmlns="http://www.w3.org/2000/svg">
+											<path d="M10.3846 7.5L3.46153 7.5" stroke-width="1.7" stroke-linecap="round"/>
+										</svg>
+										скрыть цены
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="railway__table-row">
+							<div class="railway__table-train"><span>Поезд</span>206А</div>
+							<div class="railway__table-route"><span>Маршрут</span>Санкт-Петербург → Иваново</div>
+							<div class="railway__table-departure"><span>Отправление</span>21:02</div>
+							<div class="railway__table-way"><span>В пути</span>20 часов <br>59 минут</div>
+							<div class="railway__table-arrival"><span>Прибытие</span>15:01</div>
+							<div class="railway__table-price">
+								<div class="railway__table-price-desc">
+									<div class="railway__table-desc-row">
+										<div class="railway__table-name">Сидячий</div>
+										<div class="railway__table-val">от 1 973 ₽</div>
+										<div class="railway__table-buy"><a href="#">Купить</a></div>
+									</div>
+									<div class="railway__table-desc-row">
+										<div class="railway__table-name">Плацкарт</div>
+										<div class="railway__table-val">от 2 973 ₽</div>
+										<div class="railway__table-buy"><a href="#">Купить</a></div>
+									</div>
+									<div class="railway__table-desc-row">
+										<div class="railway__table-name">Купе</div>
+										<div class="railway__table-val">от 22 973 ₽</div>
+										<div class="railway__table-buy"><a href="#">Купить</a></div>
+									</div>
+								</div>
+								<button class="railway__table-price-btn">
+									<div class="railway__table-price-text railway__table-price-text_show">
+										<svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+											<path d="M6 1.5L6 10.5" stroke-width="1.7" stroke-linecap="round"/>
+											<path d="M10.5 6L1.5 6" stroke-width="1.7" stroke-linecap="round"/>
+										</svg>
+										Посмотреть цены
+									</div>
+									<div class="railway__table-price-text railway__table-price-text_hide">
+										<svg width="14" height="15" viewBox="0 0 14 15" xmlns="http://www.w3.org/2000/svg">
+											<path d="M10.3846 7.5L3.46153 7.5" stroke-width="1.7" stroke-linecap="round"/>
+										</svg>
+										скрыть цены
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="railway__table-row">
+							<div class="railway__table-train"><span>Поезд</span>206А</div>
+							<div class="railway__table-route"><span>Маршрут</span>Санкт-Петербург → Иваново</div>
+							<div class="railway__table-departure"><span>Отправление</span>21:02</div>
+							<div class="railway__table-way"><span>В пути</span>20 часов <br>59 минут</div>
+							<div class="railway__table-arrival"><span>Прибытие</span>15:01</div>
+							<div class="railway__table-price">
+								<div class="railway__table-price-desc">
+									<div class="railway__table-desc-row">
+										<div class="railway__table-name">Сидячий</div>
+										<div class="railway__table-val">от 1 973 ₽</div>
+										<div class="railway__table-buy"><a href="#">Купить</a></div>
+									</div>
+									<div class="railway__table-desc-row">
+										<div class="railway__table-name">Плацкарт</div>
+										<div class="railway__table-val">от 2 973 ₽</div>
+										<div class="railway__table-buy"><a href="#">Купить</a></div>
+									</div>
+									<div class="railway__table-desc-row">
+										<div class="railway__table-name">Купе</div>
+										<div class="railway__table-val">от 22 973 ₽</div>
+										<div class="railway__table-buy"><a href="#">Купить</a></div>
+									</div>
+								</div>
+								<button class="railway__table-price-btn">
+									<div class="railway__table-price-text railway__table-price-text_show">
+										<svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+											<path d="M6 1.5L6 10.5" stroke-width="1.7" stroke-linecap="round"/>
+											<path d="M10.5 6L1.5 6" stroke-width="1.7" stroke-linecap="round"/>
+										</svg>
+										Посмотреть цены
+									</div>
+									<div class="railway__table-price-text railway__table-price-text_hide">
+										<svg width="14" height="15" viewBox="0 0 14 15" xmlns="http://www.w3.org/2000/svg">
+											<path d="M10.3846 7.5L3.46153 7.5" stroke-width="1.7" stroke-linecap="round"/>
+										</svg>
+										скрыть цены
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="railway__table-row">
+							<div class="railway__table-train"><span>Поезд</span>206А</div>
+							<div class="railway__table-route"><span>Маршрут</span>Санкт-Петербург → Иваново</div>
+							<div class="railway__table-departure"><span>Отправление</span>21:02</div>
+							<div class="railway__table-way"><span>В пути</span>20 часов <br>59 минут</div>
+							<div class="railway__table-arrival"><span>Прибытие</span>15:01</div>
+							<div class="railway__table-price">
+								<div class="railway__table-price-desc">
+									<div class="railway__table-desc-row">
+										<div class="railway__table-name">Сидячий</div>
+										<div class="railway__table-val">от 1 973 ₽</div>
+										<div class="railway__table-buy"><a href="#">Купить</a></div>
+									</div>
+									<div class="railway__table-desc-row">
+										<div class="railway__table-name">Плацкарт</div>
+										<div class="railway__table-val">от 2 973 ₽</div>
+										<div class="railway__table-buy"><a href="#">Купить</a></div>
+									</div>
+									<div class="railway__table-desc-row">
+										<div class="railway__table-name">Купе</div>
+										<div class="railway__table-val">от 22 973 ₽</div>
+										<div class="railway__table-buy"><a href="#">Купить</a></div>
+									</div>
+								</div>
+								<button class="railway__table-price-btn">
+									<div class="railway__table-price-text railway__table-price-text_show">
+										<svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+											<path d="M6 1.5L6 10.5" stroke-width="1.7" stroke-linecap="round"/>
+											<path d="M10.5 6L1.5 6" stroke-width="1.7" stroke-linecap="round"/>
+										</svg>
+										Посмотреть цены
+									</div>
+									<div class="railway__table-price-text railway__table-price-text_hide">
+										<svg width="14" height="15" viewBox="0 0 14 15" xmlns="http://www.w3.org/2000/svg">
+											<path d="M10.3846 7.5L3.46153 7.5" stroke-width="1.7" stroke-linecap="round"/>
+										</svg>
+										скрыть цены
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="railway__table-row">
+							<div class="railway__table-train"><span>Поезд</span>206А</div>
+							<div class="railway__table-route"><span>Маршрут</span>Санкт-Петербург → Иваново</div>
+							<div class="railway__table-departure"><span>Отправление</span>21:02</div>
+							<div class="railway__table-way"><span>В пути</span>20 часов <br>59 минут</div>
+							<div class="railway__table-arrival"><span>Прибытие</span>15:01</div>
+							<div class="railway__table-price">
+								<div class="railway__table-price-desc">
+									<div class="railway__table-desc-row">
+										<div class="railway__table-name">Сидячий</div>
+										<div class="railway__table-val">от 1 973 ₽</div>
+										<div class="railway__table-buy"><a href="#">Купить</a></div>
+									</div>
+									<div class="railway__table-desc-row">
+										<div class="railway__table-name">Плацкарт</div>
+										<div class="railway__table-val">от 2 973 ₽</div>
+										<div class="railway__table-buy"><a href="#">Купить</a></div>
+									</div>
+									<div class="railway__table-desc-row">
+										<div class="railway__table-name">Купе</div>
+										<div class="railway__table-val">от 22 973 ₽</div>
+										<div class="railway__table-buy"><a href="#">Купить</a></div>
+									</div>
+								</div>
+								<button class="railway__table-price-btn">
+									<div class="railway__table-price-text railway__table-price-text_show">
+										<svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+											<path d="M6 1.5L6 10.5" stroke-width="1.7" stroke-linecap="round"/>
+											<path d="M10.5 6L1.5 6" stroke-width="1.7" stroke-linecap="round"/>
+										</svg>
+										Посмотреть цены
+									</div>
+									<div class="railway__table-price-text railway__table-price-text_hide">
+										<svg width="14" height="15" viewBox="0 0 14 15" xmlns="http://www.w3.org/2000/svg">
+											<path d="M10.3846 7.5L3.46153 7.5" stroke-width="1.7" stroke-linecap="round"/>
+										</svg>
+										скрыть цены
+									</div>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="railway__bottom">
+					<p>На странице представлено <b>актуальное расписание поездов города Иваново</b>. Наш сервис позволяет купить или забронировать ЖД билеты онлайн, а также уточнить цены и наличие билетов на поезда РЖД. Воспользуйтесь формой поиска выше, выберите удобный маршрут и поезд. Заказ билетов в городе Иваново работает круглосуточно!</p>
+				</div>
+			</div>
+
+		</section>
+		<!-- end section railway -->
+
+	</div>
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/main.min.js"></script>
+
+</body>
+</html>

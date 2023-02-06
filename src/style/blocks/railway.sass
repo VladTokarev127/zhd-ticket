@@ -1,0 +1,338 @@
+.railway
+	max-width: 848px
+	width: 100%
+	&__container
+		max-width: 1200px
+		margin: 0 auto
+		padding: 40px 15px
+	&__title
+		font-weight: 600
+		font-size: 24px
+		line-height: 20px
+		color: #2e384d
+		margin-bottom: 20px
+	&__info
+		margin-bottom: 25px
+		&-official
+			border-radius: 8px
+			background-color: #ddeedc
+			padding: 10px 8px
+			display: flex
+			align-items: center
+			&-icon
+				fill: none
+				stroke: #1A9016
+				margin-right: 8px
+				font-size: 0
+			&-content
+		&-title
+			font-weight: 500
+			font-size: 15px
+			line-height: 16px
+			color: #1a9016
+		&-text
+			font-size: 13px
+			line-height: 16px
+			color: #1a9016
+	&__row
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		margin-bottom: 20px
+	&__col
+		margin-right: 30px
+		&:last-child
+			margin-right: 0
+	&__label
+		font-weight: 500
+		font-size: 15px
+		line-height: 20px
+		color: #2e384d
+		margin-bottom: 3px
+	&__val
+		font-size: 15px
+		line-height: 20px
+		color: #2e384d
+		a
+			color: #cd2026
+			text-decoration: none
+			transition: .3s ease-in-out
+			&:hover,
+			&:focus-visible
+				color: #2e384d
+	&__address
+		margin-bottom: 4px
+	&__links
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+	&__link
+		font-size: 15px
+		line-height: 20px
+		color: #cd2026
+		text-decoration: none
+		transition: .3s ease-in-out
+		margin-right: 10px
+		&:hover,
+		&:focus-visible
+			color: #2e384d
+	&__top
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		justify-content: space-between
+		margin-bottom: 25px
+	&__sorting
+		display: flex
+		align-items: center
+		&-btn
+			margin-left: -2px
+			padding: 10px 12px
+			background: 0
+			border: 2px solid #d9d9d9
+			transition: .3s ease-in-out
+			font-weight: 500
+			font-size: 18px
+			line-height: 21px
+			display: flex
+			align-items: center
+			text-align: center
+			letter-spacing: 0.1px
+			color: #2e384d
+			font-family: inherit
+			cursor: pointer
+			&:first-child
+				margin-left: 0
+				border-top-left-radius: 4px
+				border-bottom-left-radius: 4px
+			&:last-child
+				border-top-right-radius: 4px
+				border-bottom-right-radius: 4px
+			&:hover,
+			&:focus-visible
+				z-index: 1
+				border-color: #b5b5b5
+			&.is-active
+				z-index: 2
+				border-color: #CD2026
+				background: #f5d2d4
+	&__search
+		display: flex
+		align-items: center
+		position: relative
+		flex: 0 352px
+		&-btn
+			position: absolute
+			padding: 0
+			background: 0
+			border: 0
+			cursor: pointer
+			left: 10px
+			fill: none
+			stroke: #AAAAAA
+			transition: .3s ease-in-out
+			&:hover,
+			&:focus-visible
+				stroke: #2e384d
+		&-input
+			width: 100%
+			padding: 0 42px
+			padding-right: 20px
+			height: 41px
+			font-family: inherit
+			border: 2px solid #D9D9D9
+			border-radius: 4px
+			font-size: 15px
+			line-height: 14px
+			color: #AAAAAA
+			&::-webkit-input-placeholder
+				color: #AAAAAA
+				opacity: 1
+				transition: opacity .3s
+			&:focus::-webkit-input-placeholder
+				opacity: 1
+			&:-moz-placeholder
+				color: #AAAAAA
+				opacity: 1
+				transition: opacity .3s
+			&:focus::-moz-placeholder
+				opacity: 1
+			&::-moz-placeholder
+				color: #AAAAAA
+				opacity: 1
+				transition: opacity .3s
+			&:focus:-moz-placeholder
+				opacity: 1
+			&:-ms-input-placeholder
+				color: #AAAAAA
+				opacity: 1
+				transition: opacity .3s
+			&:focus:-ms-input-placeholder
+				opacity: 1
+			&:focus:required:invalid,
+			&:focus:required:invalid
+				color: #2e384d
+			&:required:valid,
+			&:required:valid
+				color: #2e384d
+	&__table
+		&-title
+			margin-bottom: 10px
+			font-weight: 500
+			font-size: 26px
+			line-height: 100%
+			color: #2e384d
+		&-info
+			display: flex
+			flex-wrap: wrap
+			margin-bottom: 20px
+		&-item
+			margin-right: 20px
+			display: flex
+			align-items: center
+			&-icon
+				font-size: 0
+				margin-right: 5px
+			&-text
+				font-size: 14px
+				line-height: 20px
+				color: #8798ad
+	&__table
+		margin-bottom: 20px
+		&-mob
+			display: none
+			font-weight: 500
+			font-size: 16px
+			line-height: 122%
+			color: #cd2026
+			text-align: center
+			border-bottom: 2px solid #D9DADB
+		&-head
+			display: flex
+			align-items: center
+			justify-content: space-between
+			font-weight: 500
+			font-size: 16px
+			line-height: 122%
+			color: #cd2026
+			padding-bottom: 10px
+			border-bottom: 2px solid #D9DADB
+			margin-bottom: 10px
+		&-train
+			flex: 0 9.91%
+		&-route
+			flex: 0 23.58%
+		&-departure
+			flex: 0 14.86%
+			&:not(.railway__table-departure_head)
+				font-weight: 600
+				font-size: 18px
+				line-height: 122%
+		&-way
+			flex: 0 12.26%
+		&-arrival
+			flex: 0 11.79%
+			&:not(.railway__table-arrival_head)
+				font-weight: 600
+				font-size: 18px
+				line-height: 122%
+		&-price
+			flex: 0 27.71%
+		&-body
+		&-row
+			font-size: 16px
+			line-height: 122%
+			color: #2e384d
+			margin-bottom: 10px
+			border-bottom: 1px solid #D9DADB
+			padding: 5px 0 15px
+			display: flex
+			align-items: center
+			justify-content: space-between
+			&:last-child
+				margin-bottom: 0
+			span
+				display: none
+		&-price
+			&-desc
+				display: none
+				background: #f8f9fa
+				border-top-left-radius: 4px
+				border-top-right-radius: 4px
+				border: 1px solid #D8DADB
+				border-bottom: 0
+			&-btn
+				width: 100%
+				background: #F8F9FA
+				border: 1px solid #D8DADB
+				fill: none
+				stroke: #CD2026
+				color: #CD2026
+				font-family: inherit
+				text-align: left
+				padding: 8px
+				border-radius: 4px
+				cursor: pointer
+				transition: .3s ease-in-out
+				font-weight: 500
+				font-size: 14px
+				line-height: 1
+				text-transform: uppercase
+				&.is-active
+					border-top-left-radius: 0
+					border-top-right-radius: 0
+				&:hover,
+				&:focus-visible
+					border-color: #B5B5B5
+				svg
+					margin-right: 5px
+			&-text
+				&_show
+					svg
+						position: relative
+						top: 1px
+				&_hide
+					display: none
+					svg
+						position: relative
+						top: 3px
+		&-desc
+			&-row
+				display: flex
+				padding: 8px
+				border-bottom: 1px solid #D8DADB
+				&:last-child
+					border-bottom: 0
+		&-name
+			flex: 0 76px
+			margin-right: 10px
+			font-size: 14px
+			line-height: 122%
+			color: #2e384d
+		&-val
+			flex: 0 75px
+			margin-right: 18px
+			text-align: right
+			font-weight: 500
+			font-size: 12px
+			line-height: 122%
+			color: #2e384d
+		&-buy
+			font-size: 14px
+			line-height: 122%
+			a
+				color: #cd2026
+				text-decoration: none
+				transition: .3s ease-in-out
+				&:hover,
+				&:focus-visible
+					color: #2e384d
+	&__bottom
+		font-size: 16px
+		line-height: 122%
+		color: #2e384d
+		p
+			margin: 0
+			margin-bottom: 20px
+			&:last-child
+				margin-bottom: 0
