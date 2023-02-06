@@ -1,6 +1,8 @@
 .railway
 	max-width: 848px
 	width: 100%
+	@include media-breakpoint-down(sm)
+		max-width: 100%
 	&__container
 		max-width: 1200px
 		margin: 0 auto
@@ -11,8 +13,12 @@
 		line-height: 20px
 		color: #2e384d
 		margin-bottom: 20px
+		@include media-breakpoint-down(sm)
+			margin-bottom: 15px
 	&__info
 		margin-bottom: 25px
+		@include media-breakpoint-down(sm)
+			margin-bottom: 30px
 		&-official
 			border-radius: 8px
 			background-color: #ddeedc
@@ -39,10 +45,19 @@
 		flex-wrap: wrap
 		align-items: center
 		margin-bottom: 20px
+		@include media-breakpoint-down(sm)
+			flex-wrap: nowrap
+			flex-direction: column
+			align-items: flex-start
+			margin-bottom: 15px
 	&__col
 		margin-right: 30px
+		@include media-breakpoint-down(sm)
+			margin-right: 0
+			margin-bottom: 10px
 		&:last-child
 			margin-right: 0
+			margin-bottom: 0
 	&__label
 		font-weight: 500
 		font-size: 15px
@@ -59,13 +74,19 @@
 			transition: .3s ease-in-out
 			&:hover,
 			&:focus-visible
-				color: #2e384d
+				color: #1A9016
 	&__address
 		margin-bottom: 4px
+		@include media-breakpoint-down(sm)
+			margin-bottom: 15px
 	&__links
 		display: flex
 		align-items: center
 		flex-wrap: wrap
+		@include media-breakpoint-down(sm)
+			align-items: flex-start
+			flex-wrap: nowrap
+			flex-direction: column
 	&__link
 		font-size: 15px
 		line-height: 20px
@@ -73,18 +94,58 @@
 		text-decoration: none
 		transition: .3s ease-in-out
 		margin-right: 10px
+		position: relative
+		@include media-breakpoint-down(sm)
+			margin-right: 0
+			margin-bottom: 8px
+		&::after
+			position: absolute
+			right: -45px
+			top: 0
+			content: ''
+			width: 20px
+			height: 20px
+			background-image: url(../img/done.png)
+			background-repeat: no-repeat
+			background-position: center
+			transition: .3s ease-in-out
+			opacity: 0
+			visibility: hidden
+		&.is-active
+			color: #1A9016
+			padding-right: 25px
+			&::after
+				right: 0
+				opacity: 1
+				visibility: visible
 		&:hover,
 		&:focus-visible
-			color: #2e384d
+			color: #1A9016
+		&:last-child
+			margin-bottom: 0
+	&__map
+		display: none
+		font-size: 0
+		margin-top: 15px
+		border-radius: 12px
+		overflow: hidden
+		img
+			width: 100%
+			height: auto
 	&__top
 		display: flex
 		flex-wrap: wrap
 		align-items: center
 		justify-content: space-between
 		margin-bottom: 25px
+		@include media-breakpoint-down(sm)
+			margin-bottom: 20px
 	&__sorting
 		display: flex
 		align-items: center
+		@include media-breakpoint-down(sm)
+			flex: 1 100%
+			margin-bottom: 15px
 		&-btn
 			margin-left: -2px
 			padding: 10px 12px
@@ -101,6 +162,12 @@
 			color: #2e384d
 			font-family: inherit
 			cursor: pointer
+			@include media-breakpoint-down(sm)
+				width: max-content
+				flex: max-content
+				text-align: center
+				justify-content: center
+				padding: 10px 5px
 			&:first-child
 				margin-left: 0
 				border-top-left-radius: 4px
@@ -121,6 +188,8 @@
 		align-items: center
 		position: relative
 		flex: 0 352px
+		@include media-breakpoint-down(sm)
+			flex: 1 100%
 		&-btn
 			position: absolute
 			padding: 0
@@ -182,14 +251,23 @@
 			font-size: 26px
 			line-height: 100%
 			color: #2e384d
+			@include media-breakpoint-down(sm)
+				margin-bottom: 20px
+				font-size: 20px
 		&-info
 			display: flex
 			flex-wrap: wrap
 			margin-bottom: 20px
+			@include media-breakpoint-down(sm)
+				flex-wrap: wrap
+				flex-direction: column
 		&-item
 			margin-right: 20px
 			display: flex
 			align-items: center
+			@include media-breakpoint-down(sm)
+				margin-right: 0
+				margin-bottom: 10px
 			&-icon
 				font-size: 0
 				margin-right: 5px
@@ -197,6 +275,9 @@
 				font-size: 14px
 				line-height: 20px
 				color: #8798ad
+				@include media-breakpoint-down(sm)
+					font-size: 13px
+					line-height: 16px
 	&__table
 		margin-bottom: 20px
 		&-mob
@@ -207,6 +288,9 @@
 			color: #cd2026
 			text-align: center
 			border-bottom: 2px solid #D9DADB
+			padding-bottom: 8px
+			@include media-breakpoint-down(sm)
+				display: block
 		&-head
 			display: flex
 			align-items: center
@@ -218,26 +302,45 @@
 			padding-bottom: 10px
 			border-bottom: 2px solid #D9DADB
 			margin-bottom: 10px
+			@include media-breakpoint-down(sm)
+				display: none
 		&-train
 			flex: 0 9.91%
+			@include media-breakpoint-down(sm)
+				flex: 0 33.6%
+				margin-bottom: 25px
 		&-route
 			flex: 0 23.58%
+			@include media-breakpoint-down(sm)
+				flex: 0 66.4%
+				margin-bottom: 25px
 		&-departure
 			flex: 0 14.86%
+			@include media-breakpoint-down(sm)
+				flex: 0 33.6%
+				margin-bottom: 25px
 			&:not(.railway__table-departure_head)
 				font-weight: 600
 				font-size: 18px
 				line-height: 122%
 		&-way
 			flex: 0 12.26%
+			@include media-breakpoint-down(sm)
+				flex: 0 26.4%
+				margin-bottom: 25px
 		&-arrival
 			flex: 0 11.79%
+			@include media-breakpoint-down(sm)
+				flex: 1
+				margin-bottom: 25px
 			&:not(.railway__table-arrival_head)
 				font-weight: 600
 				font-size: 18px
 				line-height: 122%
 		&-price
 			flex: 0 27.71%
+			@include media-breakpoint-down(sm)
+				flex: 1 100%
 		&-body
 		&-row
 			font-size: 16px
@@ -249,10 +352,21 @@
 			display: flex
 			align-items: center
 			justify-content: space-between
+			@include media-breakpoint-down(sm)
+				flex-wrap: wrap
+				font-size: 14px
+				align-items: flex-start
 			&:last-child
 				margin-bottom: 0
 			span
 				display: none
+				font-size: 12px
+				line-height: 14px
+				color: #8798ad
+				margin-bottom: 3px
+				font-weight: 400
+				@include media-breakpoint-down(sm)
+					display: block
 		&-price
 			&-desc
 				display: none
@@ -326,7 +440,7 @@
 				transition: .3s ease-in-out
 				&:hover,
 				&:focus-visible
-					color: #2e384d
+					color: #1A9016
 	&__bottom
 		font-size: 16px
 		line-height: 122%
